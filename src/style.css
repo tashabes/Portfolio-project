@@ -32,6 +32,10 @@ h3 {
   opacity: 0.7;
 }
 
+img {
+  border-radius: 50%;
+  margin-top: 40px;
+}
 .contact-button {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
@@ -39,4 +43,27 @@ h3 {
   border-radius: 4px;
   padding: 12px 20px;
   line-height: 27px;
+}
+.about-me {
+  padding: 160px 20px;
+}
+
+.projects {
+  padding: 160px 20px;
+}
+
+p {
+  line-height: 2;
+}
+
+.footer {
+  background-color: #ee8073;
+  padding: 80px;
+}
+
+.vertical {
+  border-left: 6px solid var(--font-color);
+  height: 200px;
+  position: absolute;
+  left: 50%;
 }
