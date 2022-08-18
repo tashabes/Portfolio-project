@@ -1,12 +1,42 @@
+:root {
+  --primary-color: #ee8073;
+  --secondary-color: #fef2f1;
+  --accent-color: #f4f4f4;
+  --font-color: #483d8b;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
+  color: var(--font-color);
+}
+.intro {
+  background-color: var(--secondary-color);
+  text-align: center;
+  margin-top: 40px;
+  padding: 160px 20px;
 }
 
 h1 {
-  font-size: 80px;
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 30px;
 }
 
 h2 {
   font-weight: bold;
+  font-size: 36px;
+}
+h3 {
+  opacity: 0.7;
+}
+
+.contact-button {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  font-size: 18px;
+  border-radius: 4px;
+  padding: 12px 20px;
+  line-height: 27px;
 }
