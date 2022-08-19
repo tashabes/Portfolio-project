@@ -13,8 +13,7 @@ body {
 .intro {
   background-color: var(--secondary-color);
   text-align: center;
-  margin-top: 40px;
-  padding: 160px 20px;
+  padding: 140px 20px;
   max-width: 100%;
 }
 
@@ -53,7 +52,7 @@ h5 {
 }
 
 .projects {
-  padding: 160px 20px;
+  padding: 120px 20px;
 }
 
 p {
@@ -71,33 +70,6 @@ footer {
   position: absolute;
   left: 50%;
 }
-
-@media (max-width: 960px) {
-  .projects {
-    padding: 0;
-    text-align: center;
-  }
-  .about-me {
-    padding: 0;
-    text-align: center;
-    margin-top: 30px;
-  }
-  .intro {
-    padding: 20px;
-    text-align: center;
-  }
-  h1 {
-    text-align: center;
-    font-size: 60px;
-  }
-  h2 {
-    font-size: 30px;
-  }
-  h3 {
-    font-size: 12px;
-  }
-}
-
 .header {
   padding: 100px;
   background-color: var(--secondary-color);
@@ -188,18 +160,10 @@ h4 {
   font-weight: bold;
 }
 
-.nav-link {
-  color: var(--primary-color);
-}
-.nav-link:hover {
-  color: var(--primary-color);
+.nav-item:hover {
   font-weight: bold;
 }
-
-.navbar-brand {
-  color: var(--font-color);
-}
-nav.navbar {
+.navbar {
   background: var(--secondary-color);
 }
 
@@ -230,4 +194,47 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+@media (max-width: 960px) {
+  .projects {
+    padding: 0;
+    text-align: center;
+  }
+  .about-me {
+    padding: 0;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .intro {
+    padding: 20px;
+    text-align: center;
+  }
+  .header {
+    padding: 20px;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+    font-size: 60px;
+  }
+  h2 {
+    font-size: 30px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 12px;
+  }
+  .container {
+    text-align: center;
+  }
+  .card-title {
+    font-size: 30px;
+  }
+  .experience-title {
+    font-size: 30px;
+  }
+  .fa-business-time {
+    margin-top: 40px;
+  }
 }

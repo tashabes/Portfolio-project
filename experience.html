@@ -40,45 +40,27 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" title="Homepage"
-          >Natasha Abel</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand" href="index.html" style="color: var(--font-color)" title="Homepage">Natasha Abel</a>
+        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <a
-              class="nav-link"
-              aria-current="page"
-              href="index.html"
-              title="Homepage"
-              >Home</a
-            >
-            <a class="nav-link active" href="experience.html" title="Experience"
-              >Experience</a
-            >
-            <a class="nav-link" href="projects.html" title="Projects"
-              >Projects</a
-            >
-            <a class="nav-link" href="contact.html" title="Contact"
-              >Say Hello!</a
-            >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse collapse" id="navbarNav"></div>
+            <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+               <a class="nav-link" style="color: var(--primary-color)" aria-current="page" href="index.html" title="Homepage">Home</a></li>
+           <li class="nav-item active"><a class="nav-link" style="color: var(--primary-color)" href="experience.html" title="Experience">Experience</a></li>
+           <li class="nav-item"> <a class="nav-link" style="color: var(--primary-color)" href="projects.html" title="Projects">Projects</a></li>
+           <li class="nav-item"> <a class="nav-link" style="color: var(--primary-color)" href="contact.html" title="Contact">Say Hello!</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </nav>
-    <div class="experience header">
+    <div class="header">
         <h2>Experience</h2>
         </div>
        
@@ -88,7 +70,7 @@
             <div class="row">
                 <div class="col-md-6 text-center">
                     <h2><i class="fa-solid fa-code"></i></h2>
-        <h3>Front-end Developer</h3>
+        <h3 class="experience-title">Front-end Developer</h3>
         <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
         <br>
         <h5>Languages I speak:</h5>
@@ -105,7 +87,7 @@
   </div>
    <div class="col-md-6 text-center">
     <h2><i class="fa-solid fa-business-time"></i></h2>
-     <h3>Business Skills</h3>
+     <h3 class="experience-title">Business Skills</h3>
      <p>I love working with people and have spent the past 10 years growing and scaling teams alongside building business strategy.</p>
      <br>
         <h5>Key skills</h5>
@@ -134,6 +116,7 @@
 <img src="images/shecodes.png" alt="sheCodeslogo" width="150">
             </div>
             <div class="col-md-9">
+                <h5>SheCodes</h5>
                 <ul>
                     <li>Shecodes Basics</li>
                     <li>Shecodes Plus</li>
@@ -176,28 +159,26 @@
         <h2>Career</h2>
 
         <div class="container">
-          <div class="row">
+          <div class="row p-4">
             <div class="col-md-4">
-              <h3>Flux</h3>
+              <h3 class="experience-title">Flux</h3>
               <h4>Head of Retail Sales and Partnerships</h4>
             </div>
             <div class="col-md-8">
               <p>
-                Flux is a VC backed fintech making receipt data accessible by
+                Flux is a VC-backed fintech making receipt data accessible by
                 API. Flux has strategic investment from Barclays and is a
                 regulated AISP for Open Banking. Public partners include
                 Barclays, Monzo, Starling, Barclaycard and Pleo.
                 <br />
-                Responsible for sales strategy and execution of new product
-                sales focusing on SMEs, resulting in double industry standards
-                of opportunities generated and closed, with 8 signed contracts
-                in a quarter from cold outreach.
-              </p>
+                <br>
+                My responsibilities include delivery of the sales strategy and execution of new product
+                sales.  My remit also covers the integration of new retailers onto the platform, working closely with the team of developers.
             </div>
           </div>
-          <div class="row">
+          <div class="row p-4">
             <div class="col-md-4">
-              <h3>Jigsaw</h3>
+              <h3 class="experience-title">Jigsaw</h3>
               <h4>Commercial Director</h4>
             </div>
             <div class="col-md-8">
@@ -207,14 +188,14 @@
                 services such as digital fulfillment, e-commerce platforms,
                 online fraud management & sales.
                 <br />
-                Built and implemented sales and partnerships strategy, growing
-                client revenue +300% to £45m for retail clients.
+                <br>
+                My responsibilities as Commercial Director were to deliver sales targets and the operations to support this.  This included working closely with developers to build several new products, including a fulfillment portal and an e-commerce whie-label solution.
               </p>
             </div>
           </div>
-          <div class="row">
+          <div class="row p-4">
             <div class="col-md-4">
-              <h3>John Lewis</h3>
+              <h3 class="experience-title">John Lewis</h3>
               <h4>Fashion Buyer</h4>
             </div>
             <div class="col-md-8">
@@ -231,21 +212,21 @@
     </div>
 
     <footer class="text-center">
-      <a href="emailto:natasha_abel@hotmail.co.uk" class="contact-footer">
+      <a href="emailto:natasha_abel@hotmail.co.uk" class="contact-footer" target="_blank">
         <i class="fa-solid fa-at"></i
       ></a>
       <a
         href="https://www.linkedin.com/in/natasha-abel-b1332922/"
-        class="contact-footer"
+        class="contact-footer" target="_blank"
         ><i class="fa-brands fa-linkedin"></i
       ></a>
-      <a href="https://github.com/tashabes" class="contact-footer">
+      <a href="https://github.com/tashabes" class="contact-footer" target="_blank">
         <i class="fa-brands fa-github"></i
       ></a>
 
       <div>
         Coded on
-        <a href="https://github.com/tashabes" class="footer-link"
+        <a href="https://github.com/tashabes" target="_blank" class="footer-link"
           >open source</a
         >
         by Natasha Abel - 2022 <br />
