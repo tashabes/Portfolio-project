@@ -62,7 +62,7 @@ p {
 }
 
 .vertical {
-  border-left: 6px solid var(--font-color);
+  border-left: 3px solid var(--font-color);
   height: 200px;
   position: absolute;
   left: 50%;
