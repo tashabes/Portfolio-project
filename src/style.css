@@ -169,3 +169,17 @@ h4 {
 .contact:visited:hover {
   color: var(--primary-color);
 }
+
+.contact-button {
+  color: var(--primary-color);
+  border-radius: 20px;
+}
+.contact-button:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+.contact-button:visited:hover {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: bold;
+}
