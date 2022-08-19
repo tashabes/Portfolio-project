@@ -149,3 +149,14 @@ h4 {
   text-decoration: none;
   color: #ee8073;
 }
+
+.title-h2 {
+  font-weight: bold;
+  font-size: 36px;
+  color: var(--font-color);
+}
+
+.title-h2:hover {
+  text-decoration: none;
+  color: var(--primary-color);
+}
