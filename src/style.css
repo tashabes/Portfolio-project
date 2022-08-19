@@ -57,7 +57,7 @@ p {
   line-height: 2;
 }
 
-.footer {
+footer {
   background-color: #ee8073;
   padding: 80px;
 }
@@ -198,4 +198,28 @@ h4 {
 }
 nav.navbar {
   background: var(--secondary-color);
+}
+
+.contact-footer {
+  font-size: 25px;
+  margin: 10px;
+  color: var(--font-color);
+}
+.contact-footer:hover {
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.footer-link {
+  color: var(--secondary-color);
+}
+
+.footer-link:hover {
+  color: var(--font-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.content-container {
+  padding: 100px;
 }
