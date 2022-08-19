@@ -94,7 +94,7 @@ p {
   }
 }
 
-.header-projects {
+.header {
   padding: 100px;
   background-color: var(--secondary-color);
   text-align: right;
@@ -158,5 +158,14 @@ h4 {
 
 .title-h2:hover {
   text-decoration: none;
+  color: var(--primary-color);
+}
+
+.contact {
+  font-size: 50px;
+  color: var(--font-color);
+}
+
+.contact:visited:hover {
   color: var(--primary-color);
 }
