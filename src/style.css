@@ -103,7 +103,6 @@ h5 {
   z-index: 1;
   width: 0;
   height: 0;
-  background: radial-gradient(circle, #ee8073);
   border-radius: 50%;
   transition: 0.3s ease;
   margin: 30px 0 20px 20px;
@@ -159,6 +158,18 @@ h5 {
 .projects {
   padding: 120px 20px;
 }
+
+.project-skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card-text-apps {
+  display: inline;
+  border: 1px solid var(--font-color);
+  padding: 5px;
+}
+
 .shecodes-logo {
   width: 150px;
 }
