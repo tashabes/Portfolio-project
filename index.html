@@ -21,61 +21,20 @@
     ></script>
   </head>
   <body>
-    <div class="container">
-    <nav class="navbar fixed-top navbar-expand-lg navigation">
-        <div class="container-fluid">
-          <a href="/" title="Home" class="navbar-brand logo ms-5">NN</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse justify-content-end me-5"
-            id="navbarNav"
-          >
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a
-                  href="/"
-                  title="Home"
-                  aria-current="page"
-                  class="nav-link active"
-                  >Home</a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/about.html" title="About Natali"
-                  >About me</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="/portfolio.html"
-                  title="Natali's Portfolio"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link"
-                  href="/contact.html"
-                  title="Contact to Nataliia"
-                  >Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+    <div id="menu-bar" onclick="onClickMenu()">
+      <div id="menu">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+      </div>
+<ul class="nav" id="nav">
+  <li><a href="index.html">Home</a></li>
+   <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+     <li><a href="contact.html">Say Hello!</a></li>
+</ul>
     </div>
+    <div class="menu-bg" id="menu-bg"></div>
     <div class="container intro">
         <div class="row no-gutters">
             <div class="col-md-8 col-sm-12">
@@ -157,7 +116,7 @@
         Portfolio hosted on Netlify
       </div>
       </footer>
-    
+    <script src="script.js"></script>
  </body>
  
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -28,26 +28,20 @@
     ></script>
   </head>
   <body>
-      <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" style="color: var(--font-color)" title="Homepage">Natasha Abel</a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarNav"></div>
-            <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-               <a class="nav-link" style="color: var(--primary-color)" aria-current="page" href="index.html" title="Homepage">Home</a></li>
-           <li class="nav-item"><a class="nav-link" style="color: var(--primary-color)" href="experience.html" title="Experience">Experience</a></li>
-           <li class="nav-item active"> <a class="nav-link" style="color: var(--primary-color)" href="projects.html" title="Projects">Projects</a></li>
-           <li class="nav-item"> <a class="nav-link" style="color: var(--primary-color)" href="contact.html" title="Contact">Say Hello!</a></li>
-            </ul>
-          </div>
-        </div>
+      <div id="menu-bar" onclick="onClickMenu()">
+      <div id="menu">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
       </div>
-    </nav>
+<ul class="nav" id="nav">
+  <li><a href="index.html">Home</a></li>
+   <li><a href="experience.html">Experience</a></li>
+    <li><a href="projects.html">Projects</a></li>
+     <li><a href="contact.html">Say Hello!</a></li>
+</ul>
+    </div>
+    <div class="menu-bg" id="menu-bg"></div>
     <div class="header">
       <h2>Projects</h2>
     </div>
@@ -244,6 +238,7 @@
         </div>
       </footer>
     </div>
+    <script src="script.js"></script>
   </body>
    <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
