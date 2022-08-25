@@ -165,9 +165,10 @@ h5 {
 }
 
 .card-text-apps {
-  display: inline;
   border: 1px solid var(--font-color);
   padding: 5px;
+  margin: 5px;
+  flex-wrap: wrap;
 }
 
 .shecodes-logo {
