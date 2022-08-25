@@ -161,14 +161,14 @@ h5 {
 
 .project-skills {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 .card-text-apps {
   border: 1px solid var(--font-color);
   padding: 5px;
   margin: 5px;
-  flex-wrap: wrap;
+  border-radius: 4px;
 }
 
 .shecodes-logo {
