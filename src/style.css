@@ -9,6 +9,7 @@ body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
   color: var(--font-color);
+  overflow-x: hidden;
 }
 .intro {
   background-color: var(--secondary-color);
@@ -32,7 +33,7 @@ h3 {
   opacity: 0.7;
 }
 h4 {
-  border: 1px solid #483d8b;
+  border: 1px solid var(--font-color);
   padding: 8px 14px;
   margin: 5px;
   font-size: 16px;
@@ -48,6 +49,10 @@ h5 {
   border-radius: 50%;
   margin-top: 40px;
 }
+
+.project-infographics {
+  width: 200px;
+}
 .contact-button {
   border: 1px solid var(--primary-color);
   color: var(--primary-color);
@@ -56,6 +61,7 @@ h5 {
   padding: 12px 20px;
   line-height: 27px;
 }
+
 .about-me {
   padding: 160px 20px;
 }
@@ -63,13 +69,21 @@ h5 {
 .projects {
   padding: 120px 20px;
 }
-
+.shecodes-logo {
+  width: 150px;
+}
+.harvard-logo {
+  width: 100px;
+}
+.cardiff-logo {
+  width: 70px;
+}
 p {
   line-height: 2;
 }
 
 footer {
-  background-color: #ee8073;
+  background-color: var(--primary-color);
   padding: 80px;
 }
 
@@ -82,7 +96,7 @@ footer {
 .header {
   padding: 100px;
   background-color: var(--secondary-color);
-  text-align: right;
+  text-align: left;
 }
 
 .project-h2 {
@@ -93,7 +107,7 @@ footer {
 }
 
 .card-text-apps:hover {
-  border: 1px dotted #ee8073;
+  border: 1px dotted var(--primary-color);
   font-weight: bold;
 }
 
@@ -108,7 +122,7 @@ footer {
 
 .visit-website:hover {
   text-decoration: none;
-  color: #ee8073;
+  color: var(--primary-color);
 }
 
 .visit-github {
@@ -123,7 +137,7 @@ footer {
 
 .visit-github:hover {
   text-decoration: none;
-  color: #ee8073;
+  color: var(--primary-color);
 }
 
 .title-h2 {
@@ -236,5 +250,9 @@ ul {
   }
   .fa-business-time {
     margin-top: 40px;
+  }
+
+  .cardiff-logo {
+    margin-bottom: 20px;
   }
 }
