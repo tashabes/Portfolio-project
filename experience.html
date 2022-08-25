@@ -28,26 +28,15 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" style="color: var(--font-color)" title="Homepage">Natasha Abel</a>
-        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbarNav"></div>
-            <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-               <a class="nav-link" style="color: var(--primary-color)" aria-current="page" href="index.html" title="Homepage">Home</a></li>
-           <li class="nav-item active"><a class="nav-link" style="color: var(--primary-color)" href="experience.html" title="Experience">Experience</a></li>
-           <li class="nav-item"> <a class="nav-link" style="color: var(--primary-color)" href="projects.html" title="Projects">Projects</a></li>
-           <li class="nav-item"> <a class="nav-link" style="color: var(--primary-color)" href="contact.html" title="Contact">Say Hello!</a></li>
-            </ul>
-          </div>
-        </div>
+    <div id="menu-bar" onclick="onClickMenu()">
+      <div id="menu">
+        <div id="bar1" class="bar"></div>
+        <div id="bar2" class="bar"></div>
+        <div id="bar3" class="bar"></div>
+
       </div>
-    </nav>
+
+    </div>
     <div class="header">
         <h2>Experience</h2>
         </div>
@@ -223,6 +212,7 @@
       </div>
     </footer>
   </body>
+  <script src="script.js"></script>
   <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
