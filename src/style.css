@@ -162,6 +162,15 @@ padding: 20px 20px;
   line-height: 27px;
 }
 
+.blue-button {
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  line-height: 27px;
+}
+
 .about-me {
   padding: 160px 20px;
 }
