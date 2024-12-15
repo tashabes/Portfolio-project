@@ -5,11 +5,19 @@
   --font-color: #483d8b;
 }
 
-body {
+html, body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
   color: var(--font-color);
   overflow-x: hidden;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 h1 {
@@ -219,6 +227,7 @@ footer {
   padding: 140px;
   background-color: var(--secondary-color);
   text-align: left;
+  flex-grow: 1;
 }
 
 .project-h2 {
@@ -306,6 +315,8 @@ footer {
   font-weight: bold;
 }
 
+
+
 .footer-link {
   color: var(--secondary-color);
 }
@@ -326,6 +337,55 @@ ul {
 }
 
 /*Project page*/
+
+.proj-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  
+}
+
+.project-detail {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 15px;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 800px;
+} 
+
+.project-detail img {
+  max-width: 150px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.project-detail h2 {
+  margin: 0 0 10px;
+  font-size: 1.5em;
+}
+
+.project-detail ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project-detail ul li {
+  padding: 3px 0;
+  font-size: 0.9em;
+  color: #333;
+}
+
+.project-detail p {
+  margin: 0 0 10px;
+  font-size: 1em;
+}
 
 .project-cards {
   display: flex;
