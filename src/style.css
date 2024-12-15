@@ -424,10 +424,7 @@ ul {
 }
 
 .project_card_footer {
-  background-color: var(--secondary-color);
-  width: 100%;
   height: 100%;
-  padding-bottom: 1em;
 }
 
 @media (max-width: 960px) {
