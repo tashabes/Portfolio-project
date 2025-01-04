@@ -12,12 +12,25 @@ html, body {
   overflow-x: hidden;
   height: 100%;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .wrapper {
   display: flex;
   flex-direction: column;
   height: 100vh;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 }
 
 h1 {
@@ -198,13 +211,25 @@ padding: 20px 20px;
 }
 
 .project-image {
-  width: 50%;
+  width: 60%;
   align-content: center;
+  box-shadow: #333;
 
 }
 
+.project-image img {
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px grey;
+}
+
+.project-image img:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease;
+}
+
 .project-content {
-  width: 50%; 
+  width: 40%; 
   margin: auto;
   padding-left: 30px;
  align-content: center;
@@ -240,8 +265,9 @@ p {
 }
 
 footer {
+  margin-top: auto;
   background-color: var(--primary-color);
-  padding: 80px;
+  padding: 40px 20px;
 }
 
 .vertical {
@@ -459,15 +485,6 @@ ul {
     padding: 0;
     text-align: center;
   }
-  .about-me {
-    padding: 0;
-    text-align: center;
-    margin-top: 30px;
-  }
-  .intro {
-    padding: 20px;
-    text-align: center;
-  }
   .header {
     padding: 20px;
     text-align: center;
@@ -498,5 +515,83 @@ ul {
 
   .cardiff-logo {
     margin-bottom: 20px;
+  }
+  .blue-button {
+    font-size: 16px;
+    padding: 10px 16px;
+    line-height: 24px;
+  }
+}
+
+@media (max-width: 768px) { /* For tablets and small screens */
+  .blue-button {
+    font-size: 16px;
+    padding: 10px 16px;
+    line-height: 24px;
+  }
+  
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+  .blue-button {
+    font-size: 14px;
+    padding: 8px 12px;
+    line-height: 20px;
+  }
+
+  .header {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .all-projects {
+    display: flex;
+    flex-direction: column  ;
+    padding: 0;
+  }
+  .project {
+    width: 100%; /* Full width on mobile */
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-image {
+    width: 100%; /* Make image take full width on mobile */
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .project-content {
+    width: 100%; /* Full width for content */
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .project-card-footer {
+    margin-top: 10px;
+    width:  100%;
+  }
+
+  .card-body {
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+  footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .contact-footer {
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
   }
 }
