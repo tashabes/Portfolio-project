@@ -488,10 +488,13 @@ ul {
   height: 100%;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 960px) { /* For tablets and small screens */
   .projects {
-    padding: 0;
+    padding: 40px 20px;
     text-align: center;
+  }
+  .about-me{
+    padding: 40px 20px;
   }
   .header {
     padding: 20px;
@@ -499,7 +502,7 @@ ul {
   }
   h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: 50px;
   }
   h2 {
     font-size: 30px;
@@ -524,6 +527,53 @@ ul {
   .cardiff-logo {
     margin-bottom: 20px;
   }
+
+  .project {
+    width: 100%; /* Full width on mobile */
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .project-image {
+    width: 100%; /* Make image take full width on mobile */
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .project-content {
+    width: 100%; /* Full width for content */
+    padding: 10px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .project-card-footer {
+    margin-top: 10px;
+    width:  100%;
+  }
+
+  .card-body {
+    font-size: 14px;
+  }
+
+  .card-title {
+    font-size: 24px;
+  }
+  footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .contact-footer {
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
   .blue-button {
     font-size: 16px;
     padding: 10px 16px;
@@ -531,18 +581,13 @@ ul {
   }
 }
 
-@media (max-width: 768px) { /* For tablets and small screens */
-  .blue-button {
-    font-size: 16px;
-    padding: 10px 16px;
-    line-height: 24px;
-  }
-  
-}
 
 @media (max-width: 480px) { /* For mobile devices */
 
-  
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
   .blue-button {
     font-size: 14px;
     padding: 8px 12px;
