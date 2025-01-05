@@ -87,6 +87,21 @@ padding: 20px 0px;
   padding: 20px;
 }
 
+.abilities {
+  padding: 0.25rem;
+  margin: 3rem;
+}
+
+.education {
+  padding: 0.25rem;
+  margin: 3rem;
+}
+
+.career {
+  padding: 0.25rem;
+  margin: 3rem;
+}
+
 .bar {
   height: 5px;
   width: 100%;
@@ -579,6 +594,22 @@ ul {
     padding: 10px 16px;
     line-height: 24px;
   }
+
+.abilities .education .career {
+  padding: 0px;
+  margin: 0px;
+}
+
+.education {
+  padding: 0px;
+  margin: 0px;
+}
+
+.career {
+  padding: 0px;
+  margin: 0px;
+}
+
 }
 
 
