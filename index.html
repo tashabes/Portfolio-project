@@ -37,6 +37,7 @@
 </ul>
     </div>
     <div class="menu-bg" id="menu-bg"></div>
+
     <div class="intro">
         <div class="row no-gutters">
             <div class="col-md-8 col-sm-12">
@@ -44,7 +45,7 @@
       <h3 class="mb-5">
         Full-stack developer, based in London
       </h3>
-      <a href="contact.html" class="contact-button" title="Contact Natasha">Contact me</a>
+      <a href="contact.html" class="button red-button" title="Contact Natasha">Contact me</a>
 </div>
       <div>
        <div class="col-md-4 d-none d-md-block">
@@ -88,7 +89,7 @@
         <div class="col-md-3">
           <h2>Projects</h2>
           <br>
-          <a href="projects.html" class="blue-button" title="Natasha's Projects">View Projects</a>
+          <a href="projects.html" class="button blue-button" title="Natasha's Projects">View Projects</a>
 
         </div>
         <div class="col-md-2">
@@ -110,9 +111,9 @@
 
     </div>
     <footer class="text-center">
-       <a href="mailto:natasha_abel@hotmail.co.uk" class="contact-footer" title="Email Natasha" target="_blank"> <i class="fa-solid fa-at"></i></a>
-        <a href="https://www.linkedin.com/in/natasha-abel-b1332922/"class="contact-footer" title="Natasha Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-       <a href="https://github.com/tashabes"class="contact-footer" title="Natasha Github" target="_blank"> <i class="fa-brands fa-github"></i></a>
+      <a href="mailto:natasha_abel@hotmail.co.uk" class="contact-footer" title="Email Natasha" target="_blank"> <i class="fa-solid fa-at"></i></a>
+      <a href="https://www.linkedin.com/in/natasha-abel-b1332922/"class="contact-footer" title="Natasha Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/tashabes"class="contact-footer" title="Natasha Github" target="_blank"> <i class="fa-brands fa-github"></i></a>
 
       <div>
         Coded by Natasha Abel - 2025 <br />
@@ -120,6 +121,17 @@
       </div>
       </footer>
     <script src="script.js"></script>
+    <script>
+      // Fetch and insert the navbar
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/navbar.html")
+          .then(response => response.text())
+          .then(data => {
+            document.getElementById("navbar-placeholder").innerHTML = data;
+          })
+          .catch(error => console.error("Error loading navbar:", error));
+      });
+    </script>
  </body>
  
    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

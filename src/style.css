@@ -3,17 +3,32 @@
   --secondary-color: #fef2f1;
   --accent-color: #f4f4f4;
   --font-color: #483d8b;
+  --font-family: "Poppins", sans-serif;
+
+  /* Font sizes */
+  --font-size-xl: 70px;
+  --font-size-lg: 50px;
+  --font-size-md: 36px;
+  --font-size-sm: 16px;
+
+    /* Spacing */
+    --spacing-sm: 0.25rem;
+    --spacing-md: 3rem;
+    --padding-md: 20px;
+}
+
+html, body, * {
+  font-family: var(--font-family);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html, body {
-  font-family: "Poppins", sans-serif;
   background: #ffffff;
   color: var(--font-color);
   overflow-x: hidden;
   height: 100%;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
 
 .wrapper {
@@ -22,27 +37,16 @@ html, body {
   height: 100vh;
 }
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-.row.no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-
 h1 {
-  font-size: 70px;
+  font-size: var(--font-size-xl);
   font-weight: bold;
   margin-top: 50px;
   margin-bottom: 30px;
 }
 
 h2 {
+  font-size: var(--font-size-md);
   font-weight: bold;
-  font-size: 36px;
 }
 h3 {
   opacity: 0.7;
@@ -51,7 +55,7 @@ h4 {
   border: 1px solid var(--font-color);
   padding: 8px 14px;
   margin: 5px;
-  font-size: 16px;
+  font-size: var(--font-size-sm);
   display: inline-block;
   border-radius: 4px;
   transition: all 200ms ease-in-out;
@@ -68,8 +72,6 @@ p {
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .header {
@@ -77,23 +79,26 @@ ul {
   background-color: var(--secondary-color);
   text-align: left;
   flex-grow: 1;
-  flex-shrink: 0;
 }
 
 footer {
   flex-shrink: 0;
-  padding: 20px;
-  margin-top: auto;
+  padding: 40px var(--padding-md);
   background-color: var(--primary-color);
-  padding: 40px 20px;
   text-align: center;
 }
 
 .container{
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+/*Utilities*/
+
+.row.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
 }
 /*Navbar*/
 
@@ -113,13 +118,15 @@ footer {
   transition: 0.3s ease;
 }
 
-#bar1 {
-  transform: translateY(-4px);
+#bar1 {transform: translateY(-4px);}
+
+#bar3 {transform: translateY(4px);}
+
+.nav li {
+  list-style: none;
+  padding: 16px 0;
 }
 
-#bar3 {
-  transform: translateY(4px);
-}
 .nav li a {
   color: var(--primary-color);
   text-decoration: none;
@@ -128,10 +135,7 @@ footer {
 .nav li a:hover {
   font-weight: bold;
 }
-.nav li {
-  list-style: none;
-  padding: 16px 0;
-}
+
 .nav {
   padding: 0;
   margin: 0 20px;
@@ -181,6 +185,39 @@ footer {
 }
 .change {
   display: block;
+}
+
+/*Buttons*/
+
+.button {
+  border-radius: 20px;
+  font-size: 18px;
+  padding: 12px 20px;
+  line-height: 27px;
+  transition: all 200ms ease-in-out;
+}
+
+.button:hover {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.red-button {
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.red-button:hover {
+  color: var(--primary-color);
+}
+
+.blue-button {
+  border: 1px solid var(--font-color);
+  color: var(--font-color);
+}
+
+.blue-button:visited:hover {
+  color: var(--font-color);
 }
 
 /*Index Page*/
@@ -235,7 +272,7 @@ padding: 20px 0px;
   font-weight: bold;
 }
 .about-me {
-  padding: 160px 20px;
+  padding: 120px 20px;
 }
 .vertical {
   border-left: 3px solid var(--font-color);
@@ -304,7 +341,7 @@ padding: 20px 0px;
 }
 
 .projects {
-  padding: 120px 20px;
+  padding: 0px 20px 80px 20px;
 }
 
 .project-skills {
@@ -376,8 +413,8 @@ padding: 20px 0px;
   color: var(--font-color);
 }
 .contact-footer:hover {
-  color: var(--primary-color);
-  font-weight: bold;
+  color: var(--font-color);
+  font-weight: bolder;
 }
 .content-container {
   flex: 1;
@@ -390,6 +427,8 @@ padding: 20px 0px;
 
 
 @media (max-width: 960px) { /* For tablets and small screens */
+  /*General*/
+
   h1 {
     text-align: center;
     font-size: 50px;
@@ -401,39 +440,60 @@ padding: 20px 0px;
   h3 {
     font-size: 12px;
   }
-  .projects {
-    padding: 40px 20px;
-    text-align: center;
-  }
-  .about-me{
-    padding: 40px 20px;
-  }
   .header {
     padding: 20px;
     text-align: center;
   }
+  footer {
+    padding: 20px;
+    font-size: 14px;
+  }
+  .contact-footer {
+    font-size: 20px;
+    margin: 10px;
+    margin-bottom: 30px;
+}
   .container {
     text-align: center;
+  }
+  .content-container {
+    height: auto;
+    padding: 20px 20px;
+  }
+  .projects {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .blue-button {
+    font-size: 16px;
+    padding: 10px 16px;
+    line-height: 24px;
+  }
+  /*Index*/
+
+  .about-me{
+    padding: 40px 20px;
   }
   .card-title {
     font-size: 30px;
   }
+  /*Experience page*/
+
   .experience-title {
     font-size: 30px;
   }
   .fa-business-time {
     margin-top: 40px;
   }
-
   .cardiff-logo {
     margin-bottom: 20px;
   }
-
-  .content-container {
-    height: auto;
-    padding: 20px 20px;
+  .abilities, .education, .career {
+    padding: 30px 0px;
+    margin: 0px;
   }
 
+/*Project Page*/
   .project {
     width: 100%; /* Full width on mobile */
     margin: 20px 0;
@@ -456,19 +516,28 @@ padding: 20px 0px;
     flex-direction: column;
     padding-bottom: 20px;
     margin-bottom: 20px;
-  }
-
-  .project-card-footer {
-    margin-top: 10px;
-    width:  100%;
-  }
-
+    }
   .card-body {
     font-size: 14px;
-  }
+    }
 
   .card-title {
     font-size: 24px;
+  }
+}
+
+
+@media (max-width: 480px) { /* For mobile devices */
+
+  /*General*/
+
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .header {
+    padding: 20px;
+    text-align: center;
   }
   footer {
     padding: 20px;
@@ -478,53 +547,17 @@ padding: 20px 0px;
     font-size: 20px;
     margin: 10px;
     margin-bottom: 30px;
-}
-
-  .blue-button {
-    font-size: 16px;
-    padding: 10px 16px;
-    line-height: 24px;
-  }
-
-.abilities .education .career {
-  padding: 0px;
-  margin: 0px;
-}
-
-.education {
-  padding: 0px;
-  margin: 0px;
-}
-
-.career {
-  padding: 0px;
-  margin: 0px;
-}
-
-}
-
-
-@media (max-width: 480px) { /* For mobile devices */
-
-  h1 {
-    text-align: center;
-    font-size: 40px;
   }
   .blue-button {
     font-size: 14px;
     padding: 8px 12px;
     line-height: 20px;
   }
-
-  .header {
-    padding: 20px;
-    text-align: center;
-  }
-
-  .comtent-container {
+  .content-container {
     padding: 0px;
   }
 
+  /*Project Page*/
   .all-projects {
     display: flex;
     flex-direction: column  ;
@@ -566,14 +599,10 @@ padding: 20px 0px;
   .card-title {
     font-size: 24px;
   }
-  footer {
-    padding: 20px;
-    font-size: 14px;
-  }
-  .contact-footer {
-    font-size: 20px;
-    margin: 10px;
-    margin-bottom: 30px;
-  }
 
+  /*Experience Page*/
+  .abilities, .education, .career {
+    padding: 20px 0px;
+    margin: 0px;
+  }
 }
