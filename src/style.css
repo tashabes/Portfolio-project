@@ -554,7 +554,8 @@ padding: 20px 0px;
     line-height: 20px;
   }
   .content-container {
-    padding: 0px;
+    padding: 10px;
+    overflow-x: hidden;
   }
 
   /*Project Page*/
