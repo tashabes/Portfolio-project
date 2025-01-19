@@ -11,24 +11,33 @@
   --font-size-md: 36px;
   --font-size-sm: 16px;
 
-    /* Spacing */
-    --spacing-sm: 0.25rem;
-    --spacing-md: 3rem;
-    --padding-md: 20px;
+  /* Spacing */
+  --spacing-sm: 0.25rem;
+  --spacing-md: 3rem;
+  --padding-md: 20px;
 }
 
-html, body, * {
+html,
+body,
+* {
   font-family: var(--font-family);
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body {
+html,
+body {
   background: #ffffff;
   color: var(--font-color);
   overflow-x: hidden;
   height: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
 }
 
 .wrapper {
@@ -65,7 +74,6 @@ h5 {
   color: var(--primary-color);
 }
 
-
 p {
   line-height: 2;
 }
@@ -80,6 +88,9 @@ ul {
   text-align: left;
   flex-grow: 1;
 }
+main {
+  flex: 1;
+}
 
 footer {
   flex-shrink: 0;
@@ -88,7 +99,7 @@ footer {
   text-align: center;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -118,9 +129,13 @@ footer {
   transition: 0.3s ease;
 }
 
-#bar1 {transform: translateY(-4px);}
+#bar1 {
+  transform: translateY(-4px);
+}
 
-#bar3 {transform: translateY(4px);}
+#bar3 {
+  transform: translateY(4px);
+}
 
 .nav li {
   list-style: none;
@@ -230,7 +245,7 @@ footer {
 }
 
 .intro-para {
-padding: 20px 0px;
+  padding: 20px 0px;
 }
 
 .intro-project {
@@ -307,19 +322,17 @@ padding: 20px 0px;
   flex-direction: column;
 }
 
-.project{
+.project {
   width: 100%;
   height: 500px;
   margin: 10px;
   display: flex;
-  
 }
 
 .project-image {
   width: 60%;
   align-content: center;
   box-shadow: #333;
-
 }
 
 .project-image img {
@@ -334,10 +347,10 @@ padding: 20px 0px;
 }
 
 .project-content {
-  width: 40%; 
+  width: 40%;
   margin: auto;
   padding-left: 30px;
- align-content: center;
+  align-content: center;
 }
 
 .projects {
@@ -381,12 +394,6 @@ padding: 20px 0px;
   height: 100%;
 }
 /*Contact Page*/
-.page-wrapper {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
 .contact {
   font-size: 50px;
   color: var(--font-color);
@@ -422,11 +429,10 @@ padding: 20px 0px;
   overflow-y: auto;
 }
 
-
 /*Responsive Design*/
 
-
-@media (max-width: 960px) { /* For tablets and small screens */
+@media (max-width: 960px) {
+  /* For tablets and small screens */
   /*General*/
 
   h1 {
@@ -452,7 +458,7 @@ padding: 20px 0px;
     font-size: 20px;
     margin: 10px;
     margin-bottom: 30px;
-}
+  }
   .container {
     text-align: center;
   }
@@ -471,7 +477,7 @@ padding: 20px 0px;
   }
   /*Index*/
 
-  .about-me{
+  .about-me {
     padding: 40px 20px;
   }
   .card-title {
@@ -488,12 +494,14 @@ padding: 20px 0px;
   .cardiff-logo {
     margin-bottom: 20px;
   }
-  .abilities, .education, .career {
+  .abilities,
+  .education,
+  .career {
     padding: 30px 0px;
     margin: 0px;
   }
 
-/*Project Page*/
+  /*Project Page*/
   .project {
     width: 100%; /* Full width on mobile */
     margin: 20px 0;
@@ -516,18 +524,18 @@ padding: 20px 0px;
     flex-direction: column;
     padding-bottom: 20px;
     margin-bottom: 20px;
-    }
+  }
   .card-body {
     font-size: 14px;
-    }
+  }
 
   .card-title {
     font-size: 24px;
   }
 }
 
-
-@media (max-width: 480px) { /* For mobile devices */
+@media (max-width: 480px) {
+  /* For mobile devices */
 
   /*General*/
 
@@ -561,11 +569,11 @@ padding: 20px 0px;
   /*Project Page*/
   .all-projects {
     display: flex;
-    flex-direction: column  ;
+    flex-direction: column;
     padding: 0;
   }
   .project {
-    width: 100%; 
+    width: 100%;
     margin: 20px 0;
     display: flex;
     flex-direction: column;
@@ -579,7 +587,7 @@ padding: 20px 0px;
   }
 
   .project-content {
-    width: 100%; 
+    width: 100%;
     padding: 10px;
     height: auto;
     display: flex;
@@ -590,7 +598,7 @@ padding: 20px 0px;
 
   .project-card-footer {
     margin-top: 10px;
-    width:  100%;
+    width: 100%;
   }
 
   .card-body {
@@ -602,7 +610,9 @@ padding: 20px 0px;
   }
 
   /*Experience Page*/
-  .abilities, .education, .career {
+  .abilities,
+  .education,
+  .career {
     padding: 20px 0px;
     margin: 0px;
   }
